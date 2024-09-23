@@ -1,0 +1,9 @@
+<mat-card>
+  <div class="title-area">
+    <h1>Music Tabs</h1>
+    <h2>Bem-vindo!</h2>
+    <h3>Preencha os dados abaixo!</h3>
+    <app-register-form [loginStatus]="loginService.status()" (register)="onRegisterLogin($event)" />
+  </div>
+</mat-card>
+

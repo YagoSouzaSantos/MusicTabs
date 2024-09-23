@@ -1,0 +1,204 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "andre@gmail.com",
+      "password": "21069090",
+      "firstName": "André",
+      "lastName": "Vasconcellos"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/repeticao-de-banda-de-rock-guitarrista-e-baterista-atras-da-bateria_155003-15467.jpg?t=st=1726873134~exp=1726876734~hmac=e9ed887b8b1a3b45e3c09ad9e3ffd616856ab2fded291af9f4596bd8718bf11e&w=1380",
+      "professor": "João Silva",
+      "description": "Introdução aos acordes básicos de guitarra",
+      "title": "Guitarra para Iniciantes",
+      "urlVideo": "https://www.youtube.com/embed/X3182sxwuuU",
+      "attachments": [
+        "acordes_basicos.pdf",
+        "guia_iniciante.docx"
+      ],
+      "instrument": "Guitarra",
+      "tag": 1
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/maos-de-vista-lateral-tocando-piano_23-2150060695.jpg?t=st=1726873186~exp=1726876786~hmac=8552cb6b7a9e1cfcdbabba62ee7c85428ec676fc0a3b97f2e1986ed43d335aff&w=1380",
+      "professor": "Ana Souza",
+      "description": "Exercícios intermediários para piano",
+      "title": "Dominando o Piano",
+      "urlVideo": "https://www.youtube.com/embed/NIs4bodYEu0",
+      "attachments": [
+        "exercicios_intermediarios.pdf"
+      ],
+      "instrument": "Piano",
+      "tag": 2
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/artista-com-cabelo-comprido-tocando-violao_23-2148751569.jpg?t=st=1726871050~exp=1726874650~hmac=1d7ce21c16ea909f0d7697fbd0a4cdb88f1e33fe1ede375dd6f2325c6a67df12&w=996",
+      "professor": "Carlos Santana",
+      "description": "Técnicas avançadas para solos de guitarra elétrica",
+      "title": "Solos Avançados de Guitarra Elétrica",
+      "urlVideo": "https://www.youtube.com/embed/ghU-p7QAoRQ",
+      "attachments": [
+        "tecnicas_solos.pdf",
+        "dicas_solos.docx"
+      ],
+      "instrument": "Guitarra Elétrica",
+      "tag": 3
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/garota-se-escondendo-atras-do-violino_23-2148006488.jpg?t=st=1726871414~exp=1726875014~hmac=c2e74b99ba442a232df88448c514c5eaeca9ca0ed62ba47b63a2781f4e1e9872&w=1380",
+      "professor": "Maria Clara",
+      "description": "Técnicas expert para tocar violino em composições clássicas",
+      "title": "Violino para Especialistas",
+      "urlVideo": "https://www.youtube.com/embed/mi9HHmabWds",
+      "attachments": [],
+      "instrument": "Violino",
+      "tag": 4
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/kit-de-bateria-bateria-no-estudio-em-um-fundo-bonito-close-up_169016-6584.jpg?t=st=1726870881~exp=1726874481~hmac=904229b42ac86239fee02776f8e382a3e9285fc49f8b9167ae4d1173e170b9ec&w=1380",
+      "professor": "Roberto Costa",
+      "description": "Ritmos complexos e padrões avançados para bateria",
+      "title": "Bateria: Masterclass de Ritmos",
+      "urlVideo": "https://www.youtube.com/embed/xzD35uL2vK4",
+      "attachments": [
+        "ritmos_complexos.pdf"
+      ],
+      "instrument": "Bateria",
+      "tag": 4
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/uma-visao-aerea-da-flauta-de-bloco-em-fundo-laranja-e-verde-dual_23-2147927385.jpg?t=st=1726871596~exp=1726875196~hmac=9f1386acc1530a5c2d18b6669e43ed318973fd48e7a2a210a53937957890ef8a&w=1380",
+      "professor": "Laura Fernandes",
+      "description": "Aprendendo flauta doce com exercícios básicos",
+      "title": "Flauta Doce para Iniciantes",
+      "urlVideo": "https://www.youtube.com/embed/nedDCNkPNJ8",
+      "attachments": [
+        "exercicios_flauta.pdf"
+      ],
+      "instrument": "Flauta Doce",
+      "tag": 1
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/jovem-musico-de-jazz-afro-americano-tocando-saxofone_155003-26289.jpg?t=st=1726871851~exp=1726875451~hmac=d3e6b0b62c567f85f30c679ff00f8d84d5e0dd8d493e379ff210036a48f45f4c&w=1380",
+      "professor": "Pedro Lima",
+      "description": "Improvisação no saxofone para músicos avançados",
+      "title": "Improvisação no Saxofone",
+      "urlVideo": "https://www.youtube.com/embed/nzynciDCkh0",
+      "attachments": [
+        "guia_improvisacao.pdf"
+      ],
+      "instrument": "Saxofone",
+      "tag": 3
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/aluna-tocando-contrabaixo_107420-64869.jpg?t=st=1726872119~exp=1726875719~hmac=a5df43e3c921227358f934c6a770fffa829a95b529ceefbebd21d6037e8ace5f&w=1380",
+      "professor": "Isabela Ribeiro",
+      "description": "Técnicas avançadas para tocar violoncelo em concertos",
+      "title": "Violoncelo Avançado",
+      "urlVideo": "https://www.youtube.com/embed/3yDNeeMI11c",
+      "attachments": [
+        "tecnicas_violoncelo.pdf"
+      ],
+      "instrument": "Violoncelo",
+      "tag": 3
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/musico-tocando-bateria-fundo-preto-e-bela-luz-suave-jogo-emocional-conceito-de-musica_169016-4572.jpg?t=st=1726872279~exp=1726875879~hmac=ffe2be1d323a6450f8b000a1bcb8a37d7a257d3c94e3816d40e71b27e1bc89bf&w=1380",
+      "professor": "Lucas Pereira",
+      "description": "Introdução à bateria com ritmos simples",
+      "title": "Bateria para Iniciantes",
+      "urlVideo": "https://www.youtube.com/embed/RexkF9jS0lk",
+      "attachments": [
+        "ritmos_iniciantes.pdf"
+      ],
+      "instrument": "Bateria",
+      "tag": 1
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/musico-tocando-guitarra_144627-26963.jpg?t=st=1726872245~exp=1726875845~hmac=2436f431f8b765c663e668f96915957626e0387425c7ba381c76f7345de9fc1c&w=1380",
+      "professor": "Fernanda Lima",
+      "description": "Desenvolvendo técnicas intermediárias no violão clássico",
+      "title": "Violão Clássico Intermediário",
+      "urlVideo": "https://www.youtube.com/embed/XwGcLA2YJXw",
+      "attachments": [
+        "violao_intermediario.pdf"
+      ],
+      "instrument": "Violão Clássico",
+      "tag": 2
+    },
+    {
+      "id": 11,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/musico-de-jazz-tocando-baixo-no-estudio-em-uma-parede-de-neon_155003-31706.jpg?t=st=1726871819~exp=1726875419~hmac=421e8d6247058ce1848ec2b37c3ff31769a3eeeecb65ec1eb43d59b52383131e&w=1380",
+      "professor": "Rafael Mendes",
+      "description": "Explorando técnicas expert no contrabaixo elétrico",
+      "title": "Contrabaixo Elétrico: Técnicas Avançadas",
+      "urlVideo": "https://www.youtube.com/embed/NwNaFPuENr0",
+      "attachments": [
+        "tecnicas_contrabaixo.pdf"
+      ],
+      "instrument": "Contrabaixo Elétrico",
+      "tag": 4
+    },
+    {
+      "id": 12,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/fim-cima-de-metal-flauta_23-2148201697.jpg?t=st=1726872331~exp=1726875931~hmac=e1b04affe6d109e73edf2d068b39b67991500f5f0e9e432dab9a39199c7af37e&w=1380",
+      "professor": "Cláudia Albuquerque",
+      "description": "Aprimorando o toque de flauta transversal com técnicas intermediárias",
+      "title": "Flauta Transversal Intermediária",
+      "urlVideo": "https://www.youtube.com/embed/51r_D4Iqp5s",
+      "attachments": [
+        "flauta_intermediaria.pdf"
+      ],
+      "instrument": "Flauta Transversal",
+      "tag": 2
+    },
+    {
+      "id": 13,
+      "thumbnail": "https://img.freepik.com/fotos-gratis/homem-de-alto-angulo-tocando-piano-no-estudio_23-2150232091.jpg?t=st=1726871950~exp=1726875550~hmac=15032fb68567e6d37da3526c706c2b8dd71a8e429f39022997a480c2824d4323&w=1380",
+      "professor": "Tiago Santos",
+      "description": "Improvisação no teclado com técnicas avançadas",
+      "title": "Teclado Avançado: Improvisação",
+      "urlVideo": "https://www.youtube.com/embed/PTgQRLmU68s",
+      "attachments": [
+        "improvisacao_teclado.pdf"
+      ],
+      "instrument": "Teclado",
+      "tag": 3
+    }
+  ],
+  "chats": [
+    {
+      "id": "bf16",
+      "text": "Aula top!",
+      "sender": {
+        "user_id": 167,
+        "name": "Robson"
+      },
+      "post_id": 1,
+      "timestamp": "2024-09-21T13:35:22.585Z"
+    },
+    {
+      "id": "5490",
+      "text": "O exemplo do anexo está para G. Como faço ele em outros tons?",
+      "sender": {
+        "user_id": 1,
+        "name": "André"
+      },
+      "post_id": 1,
+      "timestamp": "2024-09-22T22:04:27.322Z"
+    }
+  ]
+}

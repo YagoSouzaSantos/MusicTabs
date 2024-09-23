@@ -1,0 +1,25 @@
+@if ((filteredList$ | async) === null) {
+<mat-progress-spinner mode="indeterminate" color="primary"></mat-progress-spinner>
+} @else {
+<section>
+  <span>Encontre aulas de acordo com o seu nível</span>
+  <app-tag-chips />
+</section>
+
+<app-filter />
+
+<span>Aulas</span>
+<section class="cards-ctn">
+  @for (post of filteredList$ | async; track $index) {
+  <app-post-card [r_post]="post" />
+  }
+</section>
+}
+
+@if ((filteredList$ | async)?.length === 0) {
+<mat-card>
+  <mat-card-content>
+    <p>Nenhum dado encontrado para o filtro selecionado. Tente novamente aplicando um novo filtro.</p>
+  </mat-card-content>
+</mat-card>
+}

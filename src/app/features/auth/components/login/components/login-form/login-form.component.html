@@ -1,0 +1,41 @@
+<div class="info-status">
+  @if (loginStatus() === 'authenticating') {
+  <mat-spinner diameter="25"></mat-spinner>
+  }
+</div>
+
+<form [formGroup]="loginForm">
+
+  <mat-form-field appearance="outline">
+    <mat-label>E-mail</mat-label>
+    <input matNativeControl formControlName="email" type="email" placeholder="exemplo@email.com" />
+    @if (loginForm.get('email')?.invalid) {
+    <mat-error>{{getErrorMessage('email')}}</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Senha</mat-label>
+    <input matNativeControl formControlName="password" type="password" placeholder="Informe sua senha aqui" />
+    @if (loginForm.get('password')?.invalid) {
+    <mat-error>{{getErrorMessage('password')}}</mat-error>
+    }
+  </mat-form-field>
+</form>
+
+<button (click)="alert()" mat-button class="recovery-button">Esqueci minha senha</button>
+
+<div class="grid-container">
+  <div class="item1">
+    <button (click)="onSubmit($event)" [disabled]="loginStatus() === 'authenticating' || !loginForm.valid"
+      mat-flat-button class="full-width-button">Entrar
+    </button>
+  </div>
+  <div class="item4">
+    <p>ou</p>
+  </div>
+  <div class="item5"><button  mat-stroked-button color="primary" class="full-width-button" [routerLink]="'/auth/register'">Criar minha conta</button></div>
+  <div class="item5">
+    <button mat-button color="primary" class="full-width-button" [routerLink]="''">Continuar desconectado</button>
+  </div>
+</div>

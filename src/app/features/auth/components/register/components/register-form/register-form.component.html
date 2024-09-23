@@ -1,0 +1,47 @@
+<div class="info-status">
+  @if (loginStatus() === 'authenticating') {
+  <mat-spinner diameter="25"></mat-spinner>
+  }
+</div>
+
+
+<form [formGroup]="registerForm">
+
+  <mat-form-field appearance="outline">
+    <mat-label>Primeiro Nome</mat-label>
+    <input matNativeControl formControlName="firstName" type="text" placeholder="Informe seu primeiro nome" />
+    <mat-error *ngIf="registerForm.get('firstName')?.invalid">{{ getErrorMessage('firstName') }}</mat-error>
+    @if (registerForm.get('firstName')?.invalid) {
+    <mat-error>{{getErrorMessage('firstName')}}</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Sobrenome</mat-label>
+    <input matNativeControl formControlName="lastName" type="text" placeholder="Informe seu sobrenome" />
+    @if (registerForm.get('lastName')?.invalid) {
+    <mat-error>{{getErrorMessage('lastName')}}</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>E-mail</mat-label>
+    <input matNativeControl formControlName="email" type="email" placeholder="exemplo@email.com" />
+    @if (registerForm.get('email')?.invalid) {
+    <mat-error>{{getErrorMessage('email')}}</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Senha</mat-label>
+    <input matNativeControl formControlName="password" type="password" placeholder="Informe sua senha aqui" />
+    @if (registerForm.get('password')?.invalid) {
+    <mat-error>{{getErrorMessage('password')}}</mat-error>
+    }
+  </mat-form-field>
+
+
+  <button (click)="onSubmit($event)" [disabled]="loginStatus() === 'authenticating' || !registerForm.valid" mat-flat-button class="full-width-button">Criar conta de usuário</button>
+  <button mat-button color="primary" class="full-width-button" [routerLink]="''">Continuar desconectado</button>
+
+</form>

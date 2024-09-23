@@ -1,0 +1,28 @@
+@let post = postService.getPost$ | async;
+
+@if(post) {
+
+<div class="parent">
+  <mat-card appearance="outlined" class="area1">
+    <h1>{{post.title}}</h1>
+    <app-video-lesson [r_post]="post" />
+  </mat-card>
+
+  <mat-card appearance="outlined" class="area2">
+    <span>Anexos</span>
+    @if(post.attachments.length > 0){
+    @for (attachment of post.attachments; track $index) {
+    <span class="attachment" (click)="SnackbarService.showAlert('Método não implementado')">{{attachment}}</span>
+    }
+    }@else {
+    <mat-card-content>Não há anexos para esta postagem.</mat-card-content>
+    }
+  </mat-card>
+
+  <mat-card appearance="outlined" class="area3">
+    <span>Mensagens</span>
+    <app-chat [r_postId]="post.id" />
+  </mat-card>
+</div>
+
+}

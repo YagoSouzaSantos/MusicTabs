@@ -1,0 +1,5 @@
+<mat-chip-set>
+  @for(tag of allTags; track $index ) {
+    <mat-chip (click)="onFilter(tag)"  >{{ tagNameService.getTagName(tag) }}</mat-chip>
+  }
+</mat-chip-set>

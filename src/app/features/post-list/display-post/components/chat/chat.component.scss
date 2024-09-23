@@ -1,0 +1,56 @@
+:host {
+  height: 100%;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+mat-card-title {
+  font-size: 1em;
+}
+
+mat-card-subtitle {
+  font-size: 0.9em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.timestamp {
+  margin-left: auto;
+  font-size: 0.9em;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  margin-right: 10px;
+}
+
+.alert {
+  text-align: center;
+  padding: 25px;
+}

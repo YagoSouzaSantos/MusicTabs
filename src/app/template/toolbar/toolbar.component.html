@@ -1,0 +1,27 @@
+@let user = user$();
+<mat-toolbar>
+  <mat-toolbar-row>
+    <div class="spacer"></div>
+    <span class="user">{{user?.firstName}} {{user?.lastName}}</span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <span class="title">
+      <img class="icon-logo" src="icons/logo.png">
+      <span [routerLink]="''">Music Tabs</span>
+    </span>
+
+    <div class="spacer"></div>
+
+    @if (user === null || undefined) {
+      <button mat-stroked-button extended [routerLink]="'/auth/login'">
+        <mat-icon>login</mat-icon>
+        Login
+      </button>
+    } @else {
+      <button mat-stroked-button extended (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        logout
+      </button>
+    }
+  </mat-toolbar-row>
+</mat-toolbar>
