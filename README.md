@@ -1,27 +1,69 @@
 # MusicTab
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+Este é um projeto Angular chamado **MusicTab**. A seguir estão as instruções para instalar e executar o projeto.
 
-## Development server
+## Pré-requisitos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de começar, verifique se você possui os seguintes softwares instalados:
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/) (v14 ou superior)
+- [Angular CLI](https://angular.io/cli) (se ainda não tiver, você pode instalá-lo globalmente com o comando `npm install -g @angular/cli`)
+- [JSON Server](https://github.com/typicode/json-server) (para simular uma API)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O projeto foi desenvolvido na versão do Angular 18.2.4
 
-## Build
+## Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o repositório**:
 
-## Running unit tests
+   ```bash
+   git clone https://github.com/YagoSouzaSantos/MusicTabs.git
+   cd MusicTab
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Instale as dependências**:
 
-## Running end-to-end tests
+   Execute o seguinte comando para instalar todas as dependências necessárias do projeto:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   npm install
+   ```
 
-## Further help
+3. **Instale o Angular Material**:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   Para instalar o Angular Material, execute o comando:
+
+   ```bash
+   ng add @angular/material
+   ```
+
+   Siga as instruções para escolher o tema e a configuração.
+
+4. **Instale o JSON Server**:
+
+   Se você ainda não instalou o JSON Server, você pode instalá-lo globalmente com o comando:
+
+   ```bash
+   npm install -g json-server
+   ```
+
+## Executando o Projeto
+
+Para iniciar o servidor de desenvolvimento e executar o projeto, use o comando:
+
+```bash
+ng serve
+```
+
+O aplicativo estará disponível em [http://localhost:4200](http://localhost:4200).
+
+## Executando o JSON Server
+
+Para iniciar o JSON Server e simular a API, você pode usar o seguinte comando:
+
+```bash
+json-server --watch public/db.json
+```
+
+Isso fará com que o JSON Server escute as alterações no arquivo `db.json` e disponibilize os dados em [http://localhost:3000](http://localhost:3000).
+No projeto, o banco de dados está na em public/db.json
