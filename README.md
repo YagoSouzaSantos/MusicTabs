@@ -5,11 +5,10 @@ No projeto é possivel visualizar aulas disponíveis no site, aplicar filtros, c
 
 ## Pré-requisitos
 
-Antes de começar, verifique se você possui os seguintes softwares instalados:
+Verifique se você possui os seguintes softwares instalados:
 
 - [Node.js](https://nodejs.org/) (v14 ou superior)
 - [Angular CLI](https://angular.io/cli) (se ainda não tiver, você pode instalá-lo globalmente com o comando `npm install -g @angular/cli`)
-- [JSON Server](https://github.com/typicode/json-server) (para simular uma API)
 
 O projeto foi desenvolvido na versão do Angular 18.2.4
 
@@ -60,7 +59,7 @@ O aplicativo estará disponível em [http://localhost:4200](http://localhost:420
 
 ## Executando o JSON Server
 
-Para iniciar o JSON Server e simular a API, você pode usar o seguinte comando:
+Para iniciar o JSON Server e simular a API, use o seguinte comando:
 
 ```bash
 json-server --watch public/db.json
