@@ -3,11 +3,6 @@
 Este é um projeto Angular chamado **MusicTabs**. O site é um protótipo de uma plataforma para professores de música postarem aulas para divulgarem seus trabalhos.
 No projeto é possivel visualizar aulas disponíveis no site, aplicar filtros, cadastrar novos usuários e enviar mensagens ao professor que divulgou a aula.
 
-# Tecnologias utilizadas
-- Angular versão 18.2.4
-- Angular Material
-- Json Server
-
 ## Pré-requisitos
 
 Antes de começar, verifique se você possui os seguintes softwares instalados:
@@ -73,3 +68,17 @@ json-server --watch public/db.json
 
 Isso fará com que o JSON Server escute as alterações no arquivo `db.json` e disponibilize os dados em [http://localhost:3000](http://localhost:3000).
 No projeto, o banco de dados está na em public/db.json
+
+## Tecnologias utilizadas
+- Angular versão 18.2.4
+- Angular Material
+- Json Server
+
+## Melhorias futuras
+- Desenvolver a área do Professor, podendo visualizar mensagens e perguntas de alunos separadamente e com uma area específica para a postagem de novos conteúdos;
+- Chat em tempo real para conversas de professor e alunos;
+- Planos Premium para alunos que gostarem das aulas gratuítas pagem para ter conteúdos exclusivos com o professor;
+- Substituição do player do youtube para facilitar a postagem de video-aulas.
+
+
+
