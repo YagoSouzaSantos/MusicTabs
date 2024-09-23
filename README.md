@@ -1,6 +1,12 @@
 # MusicTab
 
-Este é um projeto Angular chamado **MusicTab**. A seguir estão as instruções para instalar e executar o projeto.
+Este é um projeto Angular chamado **MusicTabs**. O site é um protótipo de uma plataforma para professores de música postarem aulas para divulgarem seus trabalhos.
+No projeto é possivel visualizar aulas disponíveis no site, aplicar filtros, cadastrar novos usuários e enviar mensagens ao professor que divulgou a aula.
+
+# Tecnologias utilizadas
+- Angular versão 18.2.4
+- Angular Material
+- Json Server
 
 ## Pré-requisitos
 
